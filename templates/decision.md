@@ -1,10 +1,10 @@
-# Architecture decision record
+# Decision
 
 <!--
-Architecture decision records are for internal decisions about how Naamio Data
+Decisions record internal choices about how Naamio Data
 Space is built, structured, and maintained.
 
-Process details: https://handbook.omnifi.foundation/engineering/architecture/adrs/
+Process details: https://handbook.omnifi.foundation/engineering/architecture/governance/
 -->
 
 ## Overview
@@ -72,4 +72,4 @@ Process details: https://handbook.omnifi.foundation/engineering/architecture/adr
 This decision follows the
 [Omnifi Foundation governance model](https://handbook.omnifi.foundation/engineering/architecture/governance/).
 
-/label ~"adr" ~"architecture" ~"technical"
+/label ~"decision" ~"architecture" ~"technical"

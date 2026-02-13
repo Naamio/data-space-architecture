@@ -7,19 +7,33 @@ advocating for changes to community-facing interfaces.
 
 ## Before you begin
 
-- **Check existing proposals.** Browse `adrs/` and `rfcs/` to see what's already
+- **Check existing proposals.** Browse `decisions/` and `comments/` to see what's already
   been decided. Your idea may build on or conflict with earlier decisions.
 - **Check open merge requests.** Someone else may already be working on a
   similar proposal.
 - **Open an issue first.** Use the issue templates to signal your intent and
   get early feedback before investing time in a full proposal.
 
+
+## Understanding the terminology
+
+This repository uses accessible folder names that map to well-established
+software engineering practices:
+
+| Folder | Purpose | Also known as |
+|--------|---------|---------------|
+| `decisions/` | Recorded architectural and technical choices | Architecture decision records (ADRs) |
+| `comments/` | Proposals and discussion for community-facing changes | Requests for comments (RFCs) |
+
+The purpose is identical to traditional ADRs and RFCs — we use plainer language
+to lower the barrier to contribution.
+
 ## Choosing the right proposal type
 
-### Architecture decision records (ADRs)
+### Decisions
 
-Use an ADR when you're proposing an **internal technical or organisational
-decision**. ADRs cover how Naamio Data Space is built, structured, and
+Use a decision when you're proposing an **internal technical or organisational
+decision**. Decisions cover how Naamio Data Space is built, structured, and
 maintained.
 
 Examples:
@@ -28,12 +42,12 @@ Examples:
 - Defining the Wasm extension host capability model
 - Structuring the gRPC protocol plugin interface
 
-ADRs use **lazy consensus** — they are accepted unless someone objects within the
+Decisions use **lazy consensus** — they are accepted unless someone objects within the
 review period (typically 7–14 days). Technical leads facilitate the process.
 
-### Requests for comments (RFCs)
+### Comments
 
-Use an RFC when you're proposing a **community-facing change**. RFCs cover
+Use a comment when you're proposing a **community-facing change**. Comments cover
 interfaces, behaviours, and capabilities that directly affect how people
 interact with Naamio Data Space.
 
@@ -43,7 +57,7 @@ Examples:
 - Modifying the event system contract
 - Changing how tenant isolation works
 
-RFCs require **active consensus** — they need explicit agreement from the
+Comments require **active consensus** — they need explicit agreement from the
 community. The discussion period is a minimum of 14 days.
 
 ## Proposal workflow
@@ -51,28 +65,28 @@ community. The discussion period is a minimum of 14 days.
 ### 1. Open an issue
 
 Use the appropriate issue template:
-- **ADR**: for internal technical and organisational decisions
-- **RFC**: for community-facing changes
+- **Decision**: for internal technical and organisational choices
+- **Comment**: for community-facing changes
 
 ### 2. Draft your proposal
 
 Use the templates in `templates/`:
-- `templates/adr.md` for architecture decision records
-- `templates/rfc.md` for requests for comments
+- `templates/decision.md` for architecture decisions
+- `templates/comment.md` for community-facing proposals
 
 ### 3. File naming
 
-**ADRs**: `adrs/XXXX-short-descriptive-title.md`
+**ADRs**: `decisions/XXXX-short-descriptive-title.md`
 
-**RFCs**: `rfcs/XXXX-short-descriptive-title.md`
+**RFCs**: `comments/XXXX-short-descriptive-title.md`
 
 Numbers are sequential. Check existing files to determine the next available
 number.
 
 ### 4. Branch naming
 
-- ADRs: `proposal/adr-XXXX-short-title`
-- RFCs: `proposal/rfc-XXXX-short-title`
+- Decisions: `proposal/decision-XXXX-short-title`
+- Comments: `proposal/comment-XXXX-short-title`
 
 ### 5. Submit a merge request
 
@@ -81,9 +95,9 @@ summarise the proposal and link to the tracking issue.
 
 ### 6. Discussion and decision
 
-- **ADRs**: Technical leads review. Lazy consensus applies — accepted unless
+- **Decisions**: Technical leads review. Lazy consensus applies — accepted unless
   objected to within the review period.
-- **RFCs**: Open community discussion for a minimum of 14 days. Active consensus
+- **Comments**: Open community discussion for a minimum of 14 days. Active consensus
   required.
 
 ## Style guidelines

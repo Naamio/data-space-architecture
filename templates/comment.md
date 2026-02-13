@@ -1,10 +1,10 @@
-# Request for comments
+# Comment
 
 <!--
 For underlying technical decisions, use the architecture decision record
 template instead.
 
-Process details: https://handbook.omnifi.foundation/engineering/architecture/rfcs/
+Process details: https://handbook.omnifi.foundation/engineering/architecture/governance/
 -->
 
 ## Overview
@@ -92,4 +92,4 @@ Process details: https://handbook.omnifi.foundation/engineering/architecture/rfc
 This proposal follows the
 [Omnifi Foundation governance model](https://handbook.omnifi.foundation/engineering/architecture/governance/).
 
-/label ~"rfc" ~"architecture" ~"needs discussion"
+/label ~"comment" ~"architecture" ~"needs discussion"

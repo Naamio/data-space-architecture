@@ -1,21 +1,13 @@
-# Request for comments
+# Decision
 
 <!--
-Use this template to propose community-facing changes and features for Naamio
+Use this template to propose technical and organisational decisions for Naamio
 Data Space. After creating this issue, draft your full proposal using the
-template at templates/rfc.md and submit a merge request.
+template at templates/decision.md and submit a merge request.
 -->
 
 ## Overview
 ### Title
-### Category
-- [ ] Public interfaces
-- [ ] Features
-- [ ] Protocols
-- [ ] Behaviour
-- [ ] Community process
-- [ ] Standards
-
 ### Affected projects
 - [ ] Storage (encrypted object storage, key-value store, abstraction layer, single-binary deployment)
 - [ ] Structure (data models, tenant isolation, indexing, schema management, configuration)
@@ -29,39 +21,34 @@ template at templates/rfc.md and submit a merge request.
 
 ---
 
-## Summary
-### Proposal
-### Motivation
+## Problem statement
+### Current situation
+### Decision drivers
 
 ---
 
-## Impact
-### Who is affected?
-### Migration considerations
-
----
-
-## Proposed design
-### Overview
+## Proposed decision
+### Chosen approach
+### Rationale
 ### Alternatives considered
 
 ---
 
-## Discussion
-### Open questions
-### Discussion period
+## Impact summary
 
 ---
 
 ## Next steps
-- [ ] Draft full proposal in `rfcs/XXXX-title.md`
-- [ ] Submit merge request to begin discussion period
+- [ ] Draft full proposal in `decisions/XXXX-title.md`
+- [ ] Submit merge request for review
+- [ ] Address feedback from technical leads
+- [ ] Update status after decision
 
 ---
 
 ## Governance
 
-This proposal follows the
+This decision follows the
 [Omnifi Foundation governance model](https://handbook.omnifi.foundation/engineering/architecture/governance/).
 
-/label ~"rfc" ~"architecture" ~"needs discussion"
+/label ~"decision" ~"architecture"
